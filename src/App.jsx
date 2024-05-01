@@ -17,7 +17,10 @@ function App() {
   },[])
   
   return ( <>
-   <ClientCard {...state}/>
+  {
+    state?  <ClientCard {...state}/>:"Loading..."
+  }
+ 
       {/* <Profile/> */}
       {/* <Form/> */}
       {/* <Dice/> */}
